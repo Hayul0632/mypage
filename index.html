@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 버킷리스트</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+        html {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        * {
+            font-family: 'Song Myung', serif;
+
+        }
+
+        .bg {
+            width: 360px;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+
+        }
+
+        .title {
+            color: lavender;
+            background-color:navy;
+            font-size: 24px;
+            padding: 4px 4px;
+            border-radius: 8px;
+        }
+
+        .subtitle {
+            font-weight: bold;
+        }
+
+        .bucket {
+            width: 160px;
+            height: 160px;
+            color: lavender;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .done::after {
+            content: "";
+            width: 70%;
+            height: 70%;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/stamp.png");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 20%;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .img1-t2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-blue.png");
+            opacity: 50%;
+
+        }
+
+        .img2-t2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightblue.png");
+            opacity: 50%;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+
+</head>
+
+<body class="bg">
+    <h1 class="title center">2023 버킷리스트</h1>
+    <p class="subtitle">하기로 한 것은 무조건 하자</p>
+    <div class="flex-row wrap">
+        <div class="bucket img2-t2 center">국가 자격증 따기</div>
+        <div class="bucket img1-t2 center">한 해동안 책 20권 읽기</div>
+        <div class="bucket img1-t2 center">소설 써보기</div>
+        <div class="bucket img2-t2 center">토익 700점 넘기</div>
+        <div class="bucket img2-t2 center">방 인테리어 바꾸기</div>
+        <div class="bucket img1-t2 center">규칙적인 생활하기</div>
+    </div>
+</body>
+
+</html>
